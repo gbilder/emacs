@@ -1,0 +1,54 @@
+;; sample use of emacs abbreviation feature
+
+(define-abbrev-table 'global-abbrev-table '(
+
+    ;; math/unicode symbols
+    ("8chicken" "重庆辣子鸡")
+    ("8eur" "€")
+    ("8gbp" "£")
+    ("8heart" "♥")
+    ("8smly" "☺")
+
+    ;; email
+    ("8me" "someone@example.com")
+
+    ;; tech
+    ("api" "API")
+
+
+    ;; Crossref tech
+    ("cr" "Crossref")
+    ("inchi" "InChI")
+    ("doi" "DOI")
+    ("pid" "persistent identifier")
+
+    ;; normal english words
+    ("8alt" "alternative")
+    ("8char" "character")
+    ("8def" "definition")
+    ("8bg" "background")
+    ("8kb" "keyboard")
+    ("8ex" "example")
+    ("8kbd" "keybinding")
+    ("8env" "environment")
+    ("8var" "variable")
+    ("8ev" "environment variable")
+    ("8cp" "computer")
+
+    ;; emacs regex
+    ("8d" "\\([0-9]+?\\)")
+    ("8str" "\\([^\"]+?\\)\"")
+
+    ;; signature
+    ("8sig" "Geoffrey Bilder")
+
+    ;; url
+    ("8uxl" "http://xahlee.info/")
+
+))
+
+;; stop asking whether to save newly added abbrev when quitting emacs
+(setq save-abbrevs nil)
+
+;; turn on abbrev mode globally
+(setq-default abbrev-mode t)
