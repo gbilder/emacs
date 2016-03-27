@@ -3,6 +3,9 @@
 
 (setq user-full-name "Geoffrey Bilder")
 
+;; tramp mode speedup
+(setq tramp-default-method "ssh")
+
 ;; Be lazy answering questions
 (fset 'yes-or-no-p 'y-or-n-p)
 
