@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <16/03/27 15:51:34 /home/gbilder/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <16/03/27 15:00:47 /Users/gbilder/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -19,4 +19,7 @@
   ("perl" "\\perl")
   ("id" "/usr/bin/id")
   ("uid-integer" 1001)
-  ("gid-integer" 1001)))
+  ("gid-integer" 1001)
+  ("locale" "LC_ALL=en_US.utf8")
+  ("gid-string" "gbilder")
+  ("ls-dired" t)))
